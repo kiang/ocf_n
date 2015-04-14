@@ -1,0 +1,131 @@
+<!DOCTYPE html><html ng-app="ocf.tw" ng-cloak lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:title" content="開放文化基金會 ocf.tw"><meta property="og:description" content="財團法人開放文化基金會於民國 103 年 6 月，由台北市政府文化局，北市文化文創字第10331440100號函核准成立，本基金會致力於推廣各類開放文化活動，包括: 開放源碼、開放標準、開放硬體、開放資料、開放系統等相關領域之活動。"><!--meta(property="og:url",content="http://ocf.tw/#{lang}/")--><meta property="og:type" content="website"><meta property="og:image" content="http://ocf.tw/images/ocf-logo-2.jpg"><link rel="SHORTCUT ICON" href="/ocf.ico"><title translate="TALK_TITLE">演講資訊</title><link rel="stylesheet" type="text/css" href="/css/app.css"><link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.11.0/css/semantic.min.css"><link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/Han/2.2.3/han.css"><script src="//cdn.firebase.com/v0/firebase.js"></script><script src="/js/vendor.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.11.0/javascript/semantic.min.js"></script><script src="/js/app.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/Han/2.2.3/js/han.js"></script><script type="text/javascript">(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/zh_TW/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script></head><body><div id="header"><div id="header_inner_container"><div id="logo"><a href="/"><img src="/imgs/logo.png"></a></div><div id="social_block" class="hidden-phone"><!--i.facebook.sign.large.icon--><!--i.github.sign.large.icon--><a href="https://github.com/ocftw"><i class="inverted large github sign icon"></i></a><a href="https://www.facebook.com/www.ocf.tw"><i class="inverted large facebook icon"></i></a><!--#fb_block#fb-root
+.fb-like(data-href='https://www.facebook.com/www.ocf.tw', data-layout='button_count', data-action='like', data-show-faces='true', data-share='true')
+--></div><div ng-controller="langCtrl" class="translator"><div translate="BUTTON_LANG_TW" ng-click="changeLang('zh-TW')" class="ui mini purple button">中文</div><div translate="BUTTON_LANG_EN" ng-click="changeLang('en-US')" class="ui mini red button">English</div><div class="clearfix"></div></div></div></div><div id="container"><div class="ui fluid seven item evenly menu"><a href="/en-US/index.html" translate="MENU_HOME" class="item">首頁</a><div class="ui pointing dropdown link item"><span translate="MENU_ABOUT">關於</span><div class="menu"><a href="/en-US/about.html" translate="MENU_ABOUTG0V" class="item">關於 g0v</a><a href="/en-US/manifesto.html" translate="MENU_MANIFESTO" class="item">開放文化基金會宣言<i class="external url right icon"></i></a><a href="/en-US/community.html" translate="MENU_COMMUNITY" class="item">社群文化</a><a href="/en-US/faq.html" translate="MENU_FAQ" class="item">常見問題</a><a href="/en-US/transaction.html" translate="MENU_TRANSACTION" class="item">收支明細</a></div></div><div class="ui pointing dropdown link item undefined"><span translate="MENU_PROJECT">專案</span><div class="menu"><a href="/en-US/projects.html" translate="MENU_LIST" class="item"><span translate="MENU_LIST">成果列表</span><i class="external url right icon"></i></a><!--a.item(target="blank",href="http://hack.ocf.tw/project")span(translate="MENU_PROGRESS") 開發中專案
+i.external.url.right.icon--><a target="blank" href="https://g0v.hackpad.com/" class="item"><span translate="MENU_HACKPAD">開發共筆</span><i class="external url right icon"></i></a><!--a.item(target="blank",href="http://g0v.github.io/g0vis/#!/project/1")span(translate="MENU_VISUAL") 專案貢獻者
+i.external.url.right.icon--><a target="blank" href="http://data.ocf.tw" class="item"><span translate="MENU_OPENDATA">g0v資料開放平臺</span><i class="external url right icon"></i></a></div></div><div class="ui pointing dropdown link item"><span translate="MENU_JOIN">加入行動</span><div class="menu"><a href="/en-US/join.html" translate="MENU_HOWTO" class="item">如何參與</a><!--a.item(href="/#{lang}/tools.html", translate="MENU_TOOLS")| 常用工具--><a href="https://www.facebook.com/groups/g0v.general/" target="_blank" class="item"><span translate="MENU_MEMBER">fb 後勤中心</span><i class="external url right icon"></i></a><!--a.item(href="/#{lang}/links.html", translate="MENU_LINKS")| 相關連結--></div></div><div class="ui pointing dropdown link item undefined"><span translate="MENU_NEWS">新聞</span><div class="menu"><a href="/en-US/media.html" translate="MENU_MEDIA" class="item">媒體報導</a><a href="/en-US/blogpost.html" translate="MENU_BLOGPOST" class="item">社群分享</a><a href="/en-US/communique.html" translate="MENU_COMMUNIQUE" class="item">g0v 公報</a><a href="http://blog.ocf.tw" class="item"><span translate="MENU_BLOG">g0v 部落格</span><i class="external url right icon"></i></a><a target="blank" href="http://logbot.ocf.tw" translate="MENU_LOGBOT" class="item">IRC log<i class="external url right icon"></i></a></div></div><div class="ui pointing dropdown link item highlight"><span translate="MENU_ACT">活動資訊</span><div class="menu"><a href="/en-US/actinfo.html" translate="MENU_ACTINFO" class="item">黑客松報名</a><a href="/en-US/talk.html" translate="MENU_TALKS" class="item">演講資訊</a><!--a.item(href="/#{lang}/actrecord.html", translate="MENU_ACTRECORD")| 黑客松紀錄
+--></div></div><a href="/en-US/contact.html" translate="MENU_CONTACT" class="item">聯繫</a></div><script>(function(){
+  var links,lang;
+  if(document.title === '找不到頁面'){
+    lang = window.navigator.userLanguage || window.navigator.language;
+    links = document.querySelectorAll('.ui.fluid.seven.item.menu a');
+    for(var key in links){
+      if(links[key].href){
+        url = links[key].href.toString();
+        links[key].href = url.replace('undefined', lang);
+      }
+    }
+  }
+}());</script><div id="projects_left_container"><div class="navbar-wrapper"><ui class="ui vertical pointing secondary menu nav navbar-nav"><li class="item menuItem"><a href="#newtalks">演講預告</a></li><li class="item menuItem active"><a href="#talkvideo">演講影音</a></li><li class="item menuItem"><a href="#alltalks">演講資訊</a></li><li class="item menuItem"><a href="#invitetalks">演講邀約</a></li></ui></div></div><div id="projects_right_container"><div id="newtalks"></div><h5 class="ui header"><!--.content| 演講預告--><h3 id="-">演講預告</h3>
+<ul>
+<li>2015/04/16 勞動部 / 高嘉良</li>
+<li>2015/04/22 中山大學社會系 / 瞿筱葳</li>
+<li>2015/04/23 人事總處：網路發展趨勢與人事服務 / 唐鳳</li>
+<li>2015/04/27 逢甲大學通識課程 / 高嘉良</li>
+<li>2015/05/09 台大社科院 / 高嘉良</li>
+<li>2015/06/09 北科大電子商務政策法律課程 / 楊孝先</li>
+</ul>
+<h3 id="-">近期演講</h3>
+<ul>
+<li>2015/04/08 嘉義縣政府 / 瞿筱葳</li>
+<li>2015/04/07 勞動部 / 高嘉良</li>
+<li>2015/04/02 衛服部 / 高嘉良</li>
+<li>2015/03/31 法務部 / 高嘉良</li>
+<li>2015/03/27 中選會 / 王向榮、駱勁成、江明宗</li>
+<li>2015/03/25 人事總處：初任薦任主管訓練 / 唐鳳</li>
+<li>2015/03/23 科長級人事人員研習 / 唐鳳</li>
+<li>2015/03/23 勞動部 / 高嘉良</li>
+<li>2015/03/12 金管會 / 高嘉良</li>
+<li>2015/03/09 國防醫學院 / 高嘉良</li>
+<li>2015/03/07 高雄市公民監督公僕聯盟 / 黃雋</li>
+<li>2015/02/09 行政院局處長宣教會 / 唐鳳</li>
+<li>2015/01/23 台灣人文學社理論營 / 瞿筱葳</li>
+<li>2015/01/18 全國社工青年領袖激勵營 / 黃雋</li>
+<li>2014/12/28 行政院局處長宣教會 / 唐鳳</li>
+<li>2014/12/15 中興大學跨領域學習俱樂部 / 瞿筱葳</li>
+<li>2014/12/13 TEDxTainan 2014「新思潮」 / 高嘉良</li>
+<li>2014/12/03 台大社會系演講 / 瞿筱葳</li>
+<li>2014/12/02 特生中心：萌典、群眾協作與開放資料 / 唐鳳</li>
+<li>2014/11/29 藥學聯合 iNGO 事務培訓營：鍵盤革命，每個人都是開放政府的一員 / 楊孝先【<a href="http://www.slideshare.net/nchild/keyboard-revolution-everyone-is-part-of-open-government">投影片</a> 】</li>
+<li>2014/11/21 交大巨量資料分析實務課程 / 駱勁成、王向榮</li>
+<li>2014/11/8-9 <a href="http://summit.g0v.tw">g0v Summit 2014 零時政府年會</a></li>
+<li>2014/11/07 資策會科法所：2014科技法制前瞻論壇【政府資料開放的價值與管理】 / 楊孝先</li>
+</ul>
+</h5><div id="talkvideo"></div><h2 class="header"><div class="content">演講影音</div></h2><div class="ui three stackable items"><div class="item"><div class="content"><div class="meta">哈佛法學院．2014/9/28</div><div class="name3">Open Government/Data Movement</div><iframe width="288" height="216" src="http://www.youtube.com/embed/6_GnlzWiTZY" frameborder="0" allowfullscreen="allowfullscreen"></iframe><p class="name2">講者：Felipe Heusser, 高嘉良</p></div></div><div class="item"><div class="content"><div class="meta">Code for America Summit．2014/9/24</div><div class="name3">g0v ignite talk</div><iframe width="288" height="216" src="http://www.youtube.com/embed/Oyk28Mn4llM" frameborder="0" allowfullscreen="allowfullscreen"></iframe><p class="name2">講者：高嘉良</p></div></div><div class="item"><div class="content"><div class="meta">UDN talk 聯合大講堂．2014/9/16</div><div class="name3">資料、社群、大協作 - 開放文化基金會的數位革命</div><iframe width="288" height="216" src="http://www.youtube.com/embed/diEXolZicsw" frameborder="0" allowfullscreen="allowfullscreen"></iframe><p class="name2">講者：高嘉良</p><p class="name2">☞<a href="https://speakerdeck.com/clkao/zi-liao-she-qun-da-xie-zuo-ling-shi-zheng-fu-de-shu-wei-ge-ming" target="_blank"> 投影片</a></p></div></div><div class="item"><div class="content"><div class="meta">漢字產業創意工作坊．2014/7/26</div><div class="name3">萌典與開放文化基金會</div><iframe width="288" height="216" src="http://www.youtube.com/embed/iW5x5wkyQTU" frameborder="0" allowfullscreen="allowfullscreen"></iframe><p class="name2">講者：唐鳳</p><p class="name2">☞<a href="http://www.slideshare.net/autang/ss-37279931" target="_blank"> 投影片</a></p></div></div><div class="item"><div class="content"><div class="meta">COSCUP．2014/7/20</div><div class="name3">從沒有人到超多人：g0v社群經驗</div><iframe width="288" height="216" src="http://www.youtube.com/embed/ep1VLMvcXZY" frameborder="0" allowfullscreen="allowfullscreen"></iframe><p class="name2">講者：瞿筱葳</p><p class="name2">☞<a href="http://www.slideshare.net/ipachiu/g0v2014-coscup" target="_blank"> 投影片</a></p></div></div><div class="item"><div class="content"><div class="meta">clkao 環球分享會．2014/6/12</div><div class="name3">Open Data x Open Gov x g0v</div><iframe width="288" height="216" src="http://www.youtube.com/embed/MMLTaq-Ycw4" frameborder="0" allowfullscreen="allowfullscreen"></iframe><p class="name2">講者：高嘉良</p><p class="name2">☞<a href="https://speakerdeck.com/clkao/clkao-around-the-world-2014" target="_blank"> 投影片</a></p></div></div><div class="item"><div class="content"><div class="meta">交大資工．2014/5/14</div><div class="name3">Hacking Your Goverment with Keyboards</div><iframe width="288" height="216" src="http://www.youtube.com/embed/oUyXN1B-ogQ" frameborder="0" allowfullscreen="allowfullscreen"></iframe><p class="name2">講者：王向榮、駱勁成</p><p class="name2">☞<a href="https://g0v.hackpad.com/2014-05-14-eTkaDo45YVL" target="_blank"> 共筆、投影片</a></p></div></div><div class="item"><div class="content"><div class="meta">MLDM Monday．2014/5/5</div><div class="name3">為什麼­需要資料視覺化：漢堡、核四、車禍</div><iframe width="288" height="216" src="http://www.youtube.com/embed/jGOYK-kkNEY" frameborder="0" allowfullscreen="allowfullscreen"></iframe><p class="name2">講者：李慕約</p><!--p.name2| ☞
+a(href='https://g0v.hackpad.com/2014-05-14-eTkaDo45YVL', target="_blank")  共筆、投影片--></div></div><div class="item"><div class="content"><div class="meta">OSDC．2014/4/12</div><div class="name3">開放文化基金會的第一年</div><iframe width="288" height="216" src="http://www.youtube.com/embed/GwIMe3MNQ_Q" frameborder="0" allowfullscreen="allowfullscreen"></iframe><p class="name2">講者：唐鳳</p><p class="name2">☞<a href="http://www.slideshare.net/autang/0th-sunflower-digital-camp" target="_blank"> 投影片</a>、<a href="http://ccc.logdown.com/posts/2014/04/13/osdc2014-audrey" target="_blank"> 逐字稿</a></p></div></div><div class="item"><div class="content"><div class="meta">台大新聞所．2014/3/31</div><div class="name3">資料擷取與處理</div><iframe width="288" height="216" src="http://www.youtube.com/embed/mufsu_4sTFM" frameborder="0" allowfullscreen="allowfullscreen"></iframe><p class="name2">講者：吳泰輝</p></div></div><div class="item"><div class="content"><div class="meta">TEDxHKBU．2014/3/29</div><div class="name3">DAVID & GOLIATH - THE SURPRISING STRENGTH</div><iframe width="288" height="216" src="http://www.youtube.com/embed/U2Eu_box-I0" frameborder="0" allowfullscreen="allowfullscreen"></iframe><p class="name2">講者：高嘉良</p></div></div><div class="item"><div class="content"><div class="meta">台大 SHS talks．2014/3/26</div><div class="name3">從憤怒到協作</div><iframe width="288" height="216" src="http://www.youtube.com/embed/hRYt5R2B2L0" frameborder="0" allowfullscreen="allowfullscreen"></iframe><p class="name2">講者：瞿筱葳</p><p class="name2">☞<a href="http://www.slideshare.net/ipachiu/20140324-shs" target="_blank"> 投影片</a>、<a href="http://shs.ntu.edu.tw/shs/?p=26752" target="_blank"> 訪談</a></p></div></div><div class="item"><div class="content"><div class="meta">HK MaD.asia．2014/1/12</div><div class="name3">The Fifth Direction: Open</div><iframe width="288" height="216" src="http://www.youtube.com/embed/-BYb5wFAxOA" frameborder="0" allowfullscreen="allowfullscreen" border="0"></iframe><p class="name2">講者：高嘉良</p><p class="name2">☞<a href="https://speakerdeck.com/clkao/g0v-at-mad-dot-asia-2014" target="_blank"> 投影片</a></p></div></div><div class="item"><div class="content"><div class="meta">不要核四、五六運動．2013/12/27</div><div class="name3">『公民論壇』g0v開放文化基金會</div><iframe width="288" height="216" src="http://www.youtube.com/embed/IB5H-RzcbDk" frameborder="0" allowfullscreen="allowfullscreen"></iframe><p class="name2">講者：楊孝先</p></div></div><div class="item"><div class="content"><div class="meta">TEDxTaipei．2013/9/29</div><div class="name3">資訊的力量</div><iframe width="288" height="216" src="http://www.youtube.com/embed/7DOF0jLOut4" frameborder="0" allowfullscreen="allowfullscreen"></iframe><p class="name2">講者：吳泰輝</p></div></div><div class="item"><div class="content"><div class="meta">深音．2013/8/29</div><div class="name3">分散協作的實力與潛力</div><iframe width="288" height="216" src="http://www.youtube.com/embed/i-B8jsDVPV4" frameborder="0" allowfullscreen="allowfullscreen"></iframe><p class="name2">講者：瞿筱葳</p><p class="name2">☞<a href="http://blog.ocf.tw/posts/60348667148/g0v-tw" target="_blank"> 逐字稿</a></p></div></div><div class="item"><div class="content"><div class="meta">COSCUP．2013/8/3</div><div class="name3">求職小幫手開發心路</div><iframe width="288" height="216" src="http://www.youtube.com/embed/1QhNm7aqMcc" frameborder="0" allowfullscreen="allowfullscreen"></iframe><p class="name2">講者：王向榮</p></div></div><div class="item"><div class="content"><div class="meta">COSCUP．2013/8/3</div><div class="name3">Listening me! 福利請聽</div><iframe width="288" height="216" src="http://www.youtube.com/embed/bPK2NxzUMGs?list=UUU8s-nDqbsKnitUNaVJ2Xvg" frameborder="0" allowfullscreen="allowfullscreen"></iframe><p class="name2">講者：陳柏儒</p></div></div><div class="item"><div class="content"><div class="meta">COSCUP．2013/8/3</div><div class="name3">從開放源碼到 NPO 參與 - why and how</div><iframe width="288" height="216" src="http://www.youtube.com/embed/QJODy8qDPcY" frameborder="0" allowfullscreen="allowfullscreen"></iframe><p class="name2">講者：黃雋</p><p class="name2">☞<a href="https://speakerdeck.com/jimyhuang/cong-kai-fang-yuan-ma-dao-npocan-yu-why-and-how" target="_blank"> 投影片</a></p></div></div><div class="item"><div class="content"><div class="meta">COSCUP 閃電秀．2013/8/3</div><div class="name3">鄉民關心你</div><iframe width="288" height="216" src="http://www.youtube.com/embed/fBiPe_9i724?list=UUU8s-nDqbsKnitUNaVJ2Xvg" frameborder="0" allowfullscreen="allowfullscreen"></iframe><p class="name2">講者：林雨蒼</p></div></div><div class="item"><div class="content"><div class="meta">COSCUP．2013/8/3</div><div class="name3">Open Data 面面觀座談</div><iframe width="288" height="216" src="http://www.youtube.com/embed/X2797zh9x74" frameborder="0" allowfullscreen="allowfullscreen"></iframe><p class="name2">主持人：葉平，與談者：張善政、翟本喬、莊庭瑞、高嘉良</p></div></div><div class="item"><div class="content"><div class="meta">OSDC．2013/4/20</div><div class="name3">g0v 黑客松 - 寫程式改造社會</div><iframe width="288" height="216" src="http://www.youtube.com/embed/0HURMy0l4Ck" frameborder="0" allowfullscreen="allowfullscreen"></iframe><p class="name2">講者：吳泰輝</p><p class="name2">☞<a href="https://speakerdeck.com/tkirby/g0v-hei-ke-song-xie-cheng-shi-gai-zao-she-hui" target="_blank"> 投影片</a></p></div></div></div><div id="alltalks"></div><h3 id="-">過往演講/座談資訊、投影片</h3>
+<h4 id="2014-">2014 年</h4>
+<ul>
+<li>2014/12/02 萌典、群眾協作與開放資料 / 唐鳳</li>
+<li>2014/11/29 藥學聯合 iNGO 事務培訓營：鍵盤革命，每個人都是開放政府的一員 / 楊孝先【<a href="http://www.slideshare.net/nchild/keyboard-revolution-everyone-is-part-of-open-government">投影片</a> 】</li>
+<li>2014/11/21 交大巨量資料分析實務課程 / 駱勁成、王向榮</li>
+<li>2014/11/8-9 <a href="http://summit.g0v.tw">g0v Summit 2014 零時政府年會</a></li>
+<li>2014/11/07 資策會科法所：2014科技法制前瞻論壇【政府資料開放的價值與管理】 / 楊孝先</li>
+<li>2014/10/29 資策會資訊服務處 / 王向榮</li>
+<li>2014/10/25 台中女中 / 瞿筱葳</li>
+<li>2014/10/16 政大資管博士班 seminar 課程 / 黃雋、楊孝先</li>
+<li>2014/09/27 哈佛台灣學生會：<a href="https://www.facebook.com/photo.php?fbid=10152633344256999&amp;set=a.10150266132596999.368164.559471998&amp;type=1">Open Government &amp; Open Data movement in Chile and Taiwan</a> @哈佛法學院 / 高嘉良</li>
+<li>2014/09/22 中正大學圖書館<a href="http://ccuweb.ccu.edu.tw/calendar/view-details.php?id=436">【面對夢想行動家2 - 用鍵盤敲出正義】</a> / 瞿筱葳</li>
+<li>2014/09/14 CNEX影展《不服從行動守則Everday Rebellion》<a href="http://tw.cnexfest.org/?page_id=677">映後座談：《素人革命Z＞B》</a> / 瞿筱葳</li>
+<li>2014/09/14 <a href="http://udntalks.udn.com/2014/info.php">UDN 講堂</a>：「資料、社群、大協作 - 零時政府的數位革命」 / 高嘉良</li>
+<li>2014/08/30 串門子創媒營：「g0v: 網路公民的日常」 / 鄭遠祥 (LY) 【<a href="https://www.facebook.com/chainthemedia/posts/807172442668048">活動紀錄</a>】</li>
+<li>2014/08/30 <a href="http://twconf.data-sci.org/agenda/speech/">台灣資料科學愛好者年會</a>：「資料、社群、大協作－零時政府的數位革命」/ 高嘉良 【<a href="http://www.slideshare.net/tw_dsconf/g0v-dsconf">投影片</a>】</li>
+<li>2014/08/02 ㄅㄠˋㄇㄧㄣˊ須知-2014全國高中生行動者培力營 / 黃雋 (jimmy)</li>
+<li>2014/07/15 臺大全球集思論壇: &quot;Internet Era: How the Internet Revolutionizes Political Participation&quot; / 高嘉良 (clkao)</li>
+<li>2014/07/14 SITCON open source 推廣夏令營 / 黃雋 (jimmy)、吳泰輝 (kirby)</li>
+<li>2014/07/04 台大社科院全國高中職創意政策設計競賽 / 高嘉良、瞿筱葳</li>
+<li>2014/07/02 第三屆國際領航員營隊 / 瞿筱葳 (ipa)</li>
+<li>2014/06/07 <a href="https://www.facebook.com/events/1414694238809642/?ref=25&amp;source=1">獨立發聲，反抗有理： 網路時代下的新媒體與新聞自由 公民論壇</a> / 瞿筱葳 (ipa)</li>
+<li>2014/05/24 科技與社會研究」工作坊 / 鄭智中 (mindos)</li>
+<li>2014/05/21 <a href="https://taiwan-doit.com/">交點DOIT</a> / 簡信昌 (hcchien)</li>
+<li>2014/05/20 臺大新聞所：<a href="http://ntujournal.blogspot.tw/2014/05/g0ve.html">看見太陽花運動中的新媒體</a> / 趙偉伶 (venev)</li>
+<li>2014/05/14 政治大學學生會：<a href="http://moltke.cc.nccu.edu.tw/Registration/registration.do?action=conferenceInfo&amp;conferenceID=X08095">網路世代的民主</a> / 黃雋 (jimmy)、瞿筱葳 (ipa)</li>
+<li>2014/05/14 交大資工論文研討-多媒體與生醫工程(英)：Hacking Your Goverment with Keyboards / 王向榮(ronnywang)、駱勁成 (johnny)</li>
+<li>2014/05/07 交大迪霸閣演講 / 鄭智中 (mindos)</li>
+<li>2014/04/25 創立方：<a href="http://vevent.flyingv.cc/event/12">【虛擬世界。需你世界】鍵盤救台灣，創造新世代公民運動</a> / 瞿筱葳 (ipa)</li>
+<li>2014/03/14 <a href="http://wofoss.kktix.cc/events/wofoss043-201403">WoFoss好自由（台灣女子自由軟體工作小組）</a>：「我的超展開 g0v 之旅」/ 瞿筱葳 (ipa)</li>
+<li>2014/03/24 內政部 Open Data 演講 / 高嘉良 (clkao)</li>
+<li>2014/03/26 <a href="http://shs.ntu.edu.tw/shs/?p=26223">台大 SHS 科學人文跨科際計畫</a> / 瞿筱葳 (ipa)</li>
+<li>2014/03/29 Hong Kong Open Source Converence: <a href="http://opensource.hk/en/2014/open-source-beyond-developers-g0v.tw">Open Source Beyond Developers: g0v.tw</a> / 高嘉良 (clkao)</li>
+<li>2014/04/06 廣州社會創新日 / 李慕約</li>
+<li>2014/04/15 新竹高中土地社 / 朱立傑 (walkingice)</li>
+<li>2014/03/11 <a href="http://nettuesday.tw/events/2014/03/456">網路星期二：「如何拍出好照片？」</a> / 吳泰輝 (kirby)</li>
+<li>2014/02/24 內政部 Open Data 演講 / 王向榮 (Ronny Wang)、高嘉良 (clkao)</li>
+<li>2014/02/21 Open Data 創意研習營 / 吳泰輝 (Kirby)</li>
+<li>2014/01/25 綠人談壇 / 簡信昌 (hcchien)</li>
+<li>2014/01/23 庶人之亂青年行動者培力交流營 / 瞿筱葳 (ipa)</li>
+<li>2014/01/22 成功大學網際網路程式設計期末展 / 鄭智中 (Mindos)</li>
+<li>2014/01/21 立法院資訊處專題演講 / 駱勁成(Johnny)、高嘉良 (clkao)</li>
+<li>2014/01/14 交通部公路總局：「零時政府，可以吃嗎?」 / 王向榮 (Ronny Wang) 【<a href="https://docs.google.com/presentation/d/1hpzKM_14LsWd9n30th1ZUxeN-bMY7ihLpLHY5rmivic/edit?usp=sharing">投影片</a>】</li>
+<li>2014/01/10-12 香港創不同 MaD 年會：<a href="http://www.mad.asia/posts/557/MaD%20Forum/The-Fifth-Direction:-From-Here-and-Now-to-an-Envisioned-There">第五方向：從這裡，往哪裡，怎樣走</a> / 高嘉良 (clkao)</li>
+</ul>
+<h4 id="2013-">2013 年</h4>
+<ul>
+<li>2013/12/09【文化攻策論壇】‧ 系列參 ─<a href="https://www.facebook.com/events/334833043324985/">公民參與 &amp; 網路革命</a> / 吳泰輝 【<a href="https://docs.google.com/file/d/0B_UpRpAst1MYeXhnMHZFX21MTjg/edit">投影片</a>】</li>
+<li>2013/12/04 東華大學數學系 / 高嘉良 (clkao)</li>
+<li>2013/12/04 政治大學資管系 / 鄭智中 (mindos)、王向榮 (Ronnywang)、林旅強 (Richard)</li>
+<li>2013/11/08 中央研究院開放資料工作坊：<a href="http://odw.tw/">從開放源碼，開放資料，到開放政府</a> / 高嘉良 (clkao)</li>
+<li>2013/10/22 中央大學資訊系：<a href="http://www.openfoundry.org/tw/activities/details/404">Coke, Pizza, and Open Data</a> / 陳柏儒 (Blue)、林旅強 (Richard)、鄭智中 (Mindos)</li>
+<li>2013/10/28 台北信義社大：<a href="http://www.xycc.org.tw/class/102-2-P/W06.htm">以自身專業改善社會的可能</a> / 黃雋 (jimmyhuang)、陳信屹 (hychen)</li>
+<li>2013/10/01 臺北大學：<a href="http://www.ntpu.edu.tw/chinese/todayEvents_more.php?id=3522">資訊傳播、個人行為與社會運動：社會網絡觀點的啟示</a> / 瞿筱葳 (ipa)</li>
+<li>2013/09/28 TEDxTaipei 新世紀啟程：<a href="http://tedxtaipei.com/talks/2013-kirby-wu/">資訊的力量</a> / 吳泰輝 (kirby)</li>
+<li>2013/09/10 網路星期二 : <a href="http://nettuesday.tw/events/2013/09/438">網路社群改造社會之零時政府(g0v.tw)</a> / 高嘉良 (clkao)</li>
+<li>延期 <a href="http://www.hpx-party.com/hpx-events/hp51 / 高嘉良 (clkao">HP51 – Open Data x Open Design</a></li>
+<li>2013/08/18 <a href="http://www.xd-crossdesign.com/2013/08/xd-2013-no1-innovative-citizen.html">XD 2013 跨設計分享會 no.1 [Innovative Citizen]</a>：與談人 tkirby, ETBlue</li>
+<li>2013/08/03-04 COSCUP 2013 / g0v 社群</li>
+<li>2013/07 政大道南營：「網路公民的進擊」 / 瞿筱葳 (ipa) 【<a href="https://speakerdeck.com/ipaaa/g0v-wang-lu-gong-min-de-jin-ji">投影片</a>】</li>
+<li>2013 政大開放資料與社群協力創新：「從開放源碼到開放政府」/ 高嘉良 (clkao) 【<a href="https://speakerdeck.com/clkao/cong-kai-fang-yuan-ma-dao-kai-fang-zheng-fu">投影片</a>】</li>
+<li>2013/04 OSDC Taiwan：「g0v 黑客松 - 寫城市改造社會」 / 吳泰輝 (tkirby) 【<a href="https://speakerdeck.com/tkirby/g0v-hei-ke-song-xie-cheng-shi-gai-zao-she-hui">投影片</a>】、【<a href="http://blog.g0v.tw/post/58752578556">逐字稿與錄影</a>)】</li>
+<li>2013/04 OSDC Taiwan: &quot;PgRest Node.js in the Data / 萌典&quot; / 唐鳳 (au) 【<a href="https://speakerdeck.com/audreyt/pgrest-node-dot-js-in-the-database">投影片</a>】</li>
+<li>2013/01 WebConf Taiwan ：「g0v 黑客松 - 寫程式改造社會」 / 高嘉良 (clkao)【<a href="https://speakerdeck.com/clkao/g0v-hei-ke-song-xie-cheng-shi-gai-zao-she-hui">投影片</a>】</li>
+</ul>
+<h3 id="-">演講訪談邀約</h3>
+<p>來信請寄：g0v-talks [at] googlegroups.com（黑客松不開放旁聽、採訪，想來現場請報名參與活動。感謝！）</p>
+<div id="invitetalks"></div></div></div></body><div id="footer" class="hidden-phone"><div id="sitemap-panel"><div class="map-entry"><div translate="FOOTER_SOCIAL_WEB" class="map-caption">社群網站</div><div class="map-item"><a href="https://www.facebook.com/www.ocf.tw" translate="FOOTER_FACEBOOK">臉書專頁</a></div></div><div class="map-entry"><div translate="FOOTER_PROJECT" class="map-caption">專案</div><div class="map-item"><a href="https://github.com/ocftw/ocf.tw" translate="FOOTER_SOURCECODE">源碼集散地</a></div></div><div class="map-entry"><div translate="FOOTER_INFO" class="map-caption">資訊</div><div class="map-item"><a href="http://blog.ocf.tw/" translate="FOOTER_BLOG">部落格</a></div></div></div><div id="social_plugins"><div class="footer-brand">ocf.tw 2015 |<img src="/imgs/logo.png"><div ng-controller="BuildIdCtrl" class="build-id"><a href="https://github.com/ocftw/ocf.tw">{{buildId}}</a></div></div></div><script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-379894-19', 'ocf.tw');
+ga('send', 'pageview');</script></div></html>
