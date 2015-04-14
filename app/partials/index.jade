@@ -34,49 +34,10 @@ block content
                 p.description
                   | g0v 二十多位講者分享開放協作與開源模式的開放文化基金會社群成果與經驗。
 
-      .ui.red.segment(ng-controller="CommuniqueCtrl")
-          .ui.red.ribbon.label.label(translate="HOME_COMMUNITY") 社群動態
-          a.ui.blue.tiny.button.pull-right(ng-click="nextCommunique()")
-              i.right.arrow.icon
-          .featured-communiques
-              h4: a(target="_blank" ng-href="http://g0v.hackpad.com/{{communique.padID}}") {{ communique.date }}
-              p(ng-bind-html="communique.content")
-
-
-      .ui.green.segment(ng-controller="BlogCtrl")
-          .ui.red.ribbon.large.label(translate="HOME_BLOG") 開放文化基金會部落格
-          .blog-loading(ng-show="articles.length === 0")
-          article(ng-repeat="article in articles | orderBy:'$index':true")
-              h4: a(ng-href="{{article.link}}") {{article.title}}
-              div(btf-markdown="article.description")
-              .ui.horizontal.icon.divider
-                  i.code.icon
-
-      .ui.purple.segment(ng-controller="FeaturedCtrl")
-          .ui.red.ribbon.large.label(translate="HOME_ACHIEVEMENT") 開放文化基金會最新成果
-          a.ui.blue.tiny.button.pull-right(ng-click="nextProject()")
-              i.right.arrow.icon
-          .featured-projects
-              h4: a(ng-href="{{project.homepage}}") {{project.name_zh || project.name}}
-              .imgblock(style="text-align:center;border-top:1px solid #ccc;border-bottom:1px solid #ccc")
-                a(ng-href='{{project.homepage}}')
-                  #prj-img-div
-                    img#prj-img(ng-src='{{project.thumbnail.reduce ? project.thumbnail.0 : project.thumbnail}}',onload="show()")
-              p.description {{ project.description_zh || project.description }}
-
 
   #index_right_container
 
-      .ui.orange.segment(ng-controller="EventCtrl")
-
-          .event-loading(ng-show="events.length === 0")
-          h4 最新活動
-              .ui.list
-                  .item(ng-repeat="event in events | limitTo:2")
-                      i(ng-class="{checked:event.finished, empty:!event.finished}").checkbox.icon
-                      .content
-                          a(ng-href="{{event.link}}") {{event.title}}
-
+      .ui.orange.segment
           .ui.divider
           .videos
               h4(translate="HOME_VIDEOS") 相關影片
