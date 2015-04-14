@@ -4,7 +4,7 @@ angular.element(document).ready ->
   for func in defer-src-setters
     func!
 
-angular.module "g0v.tw" <[firebase btford.markdown pascalprecht.translate]>
+angular.module "ocf.tw" <[firebase btford.markdown pascalprecht.translate]>
 
 # Set CORS Config
 .config <[$httpProvider $translateProvider ]> ++ ($httpProvider, $translateProvider) ->

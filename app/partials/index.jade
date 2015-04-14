@@ -1,14 +1,14 @@
 extend ../layout/layout
 
 block title
-  title(translate="HOME_TITLE") 零時政府 g0v.tw 首頁
+  title(translate="HOME_TITLE") 開放文化基金會 ocf.tw 首頁
 block vars
   - nav_cls.index = 'highlight'
 
 block content
   #index_left_container
       .ui.segment
-        a(href="http://g0v.tw/zh-TW/join.html")
+        a(href="http://ocf.tw/zh-TW/join.html")
           img.ui.image(src='/imgs/g0vactionbanner-800.gif')
 
       .ui.three.connected.items
@@ -32,7 +32,7 @@ block content
               .content
                 .name 近期演講
                 p.description
-                  | g0v 二十多位講者分享開放協作與開源模式的零時政府社群成果與經驗。
+                  | g0v 二十多位講者分享開放協作與開源模式的開放文化基金會社群成果與經驗。
 
       .ui.red.segment(ng-controller="CommuniqueCtrl")
           .ui.red.ribbon.label.label(translate="HOME_COMMUNITY") 社群動態
@@ -44,7 +44,7 @@ block content
 
 
       .ui.green.segment(ng-controller="BlogCtrl")
-          .ui.red.ribbon.large.label(translate="HOME_BLOG") 零時政府部落格
+          .ui.red.ribbon.large.label(translate="HOME_BLOG") 開放文化基金會部落格
           .blog-loading(ng-show="articles.length === 0")
           article(ng-repeat="article in articles | orderBy:'$index':true")
               h4: a(ng-href="{{article.link}}") {{article.title}}
@@ -53,7 +53,7 @@ block content
                   i.code.icon
 
       .ui.purple.segment(ng-controller="FeaturedCtrl")
-          .ui.red.ribbon.large.label(translate="HOME_ACHIEVEMENT") 零時政府最新成果
+          .ui.red.ribbon.large.label(translate="HOME_ACHIEVEMENT") 開放文化基金會最新成果
           a.ui.blue.tiny.button.pull-right(ng-click="nextProject()")
               i.right.arrow.icon
           .featured-projects
@@ -81,29 +81,14 @@ block content
           .videos
               h4(translate="HOME_VIDEOS") 相關影片
               iframe(defer-src="//www.youtube.com/embed/videoseries?list=PLdwQWxpS513Ayb0JJfgbf79i3pgP9vGxG",frameborder="0",allowfullscreen,width="100%")
-
-          .ui.divider
-          .g0vslack
-              h4(translate="HOME_SLACK") 加入 g0v.tw Slack
-              p 現在 IRC 與 Slack 已經同步囉！
-              a(target="_blank",class="ui blue small button",href="http://join.g0v.today/") 立刻申請加入 Slack
-          .ui.divider
-          .logbot
-              h4
-                span(translate="HOME_CHATROOM") 即時聊天
-                a(target="_blank",href="http://logbot.g0v.tw/") (紀錄)
-              h4
-                  a(target="_blank",class="ui blue small button",href="http://hack.g0v.tw/irc") 來聊天！
-              // iframe(height="480",target="_blank",defer-src="http://lumberjack.ultrab0t.net/widget/g0v.tw/",frameborder="0",allowfullscreen)
-              iframe(height="480",target="_blank",defer-src="http://logbot.g0v.tw/widget/g0v.tw",frameborder="0",allowfullscreen)
           .ui.divider
           .g0village
               h4(translate="HOME_ONLINE_GAME") 線上遊戲
-              h4: a(target="_blank",class="ui blue small button",href="http://8bit.g0v.tw/") 8-bit 新手村
+              h4: a(class="ui blue small button",href="http://ocf.tw/donate/") 贊助
           .ui.divider
           .google_calendar
               h4(translate="HOME_FACEBOOK_PAGE") fb專頁
-          .fb-like-box(data-href='http://www.facebook.com/g0vtw', data-width='240', data-colorscheme='light', data-show-faces='false', data-header='true', data-stream='true', data-show-border='true')
+          .fb-like-box(data-href='https://www.facebook.com/www.ocf.tw', data-width='240', data-colorscheme='light', data-show-faces='false', data-header='true', data-stream='true', data-show-border='true')
           .ui.divider
           .google_calendar
               h4(translate="HOME_SCHEDULE") 行事曆

@@ -10,3 +10,4 @@ npm-debug.log
 _public
 
 test/karma.*.js
+nbproject
